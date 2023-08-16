@@ -1,0 +1,70 @@
+#root {
+  margin: 0 auto;
+}
+
+.App {
+  padding-top: 40px;
+}
+
+.form {
+  display: flex;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.form label {
+  font-size: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18px;
+
+  text-align: start;
+}
+
+.input {
+  height: 40px;
+}
+
+.form-btn {
+  height: 46px;
+  padding: 3px 18px;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2;
+
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.watches-list__item {
+  position: relative;
+
+  padding: 14px 20px;
+
+  text-align: center;
+
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 1px 3px;
+
+  font-size: 10px;
+}
