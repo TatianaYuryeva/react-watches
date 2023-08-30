@@ -36,7 +36,10 @@ export default class Form extends Component<Props, State> {
         <div className="form-group">
           <label htmlFor="title">Название</label>
           <input 
-          className="input" name="title" 
+          className="input" 
+          name="title" 
+          placeholder="Гонолулу"
+          required
           value={this.state.newWatchTitle} 
           onChange={e => this.setState({newWatchTitle: (e.target.value)})}/>
         </div>
@@ -44,6 +47,10 @@ export default class Form extends Component<Props, State> {
           <label htmlFor="timeZone">Временная зона</label>
           <input className="input" 
           name="timeZone" 
+          type="text"
+          placeholder="-10"
+          pattern="^[\-+]?\d{1,2}$"
+          required
           value={this.state.newWatchZone}
           onChange={e => this.setState({newWatchZone: (e.target.value)})}/>
         </div>   
